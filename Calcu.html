@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="calculator.css">
+  <title>Calculator</title>
+</head>
+<body>
+  <div id=" Calculator ">
+    <input type="text" id="display" disabled>
+    <div class="button-row">
+      <button class="number" id="seven" onclick="display.value += '7'">7</button>
+      <button class="number" id="eight" onclick="display.value += '8'">8</button>
+      <button class="number" id="nine" onclick="display.value += '9'">9</button>
+      <button class="operator" id="divide" onclick="display.value += '/'">/</button>
+    </div>
+    <div class="button-row">
+      <button class="number" id="four" onclick="display.value += '4'">4</button>
+      <button class="number" id="five" onclick="display.value += '5'">5</button>
+      <button class="number" id="six" onclick="display.value += '6'">6</button>
+      <button class="operator" id="multiply" onclick="display.value += '*'">*</button>
+    </div>
+    <div class="button-row">
+      <button class="number" id="one" onclick="display.value += '1'">1</button>
+      <button class="number" id="two" onclick="display.value += '2'">2</button>
+      <button class="number" id="three" onclick="display.value += '3'">3</button>
+      <button class="operator" id="subtract" onclick="display.value += '-'">-</button>
+    </div>
+    <div class="button-row">
+      <button class="number" id="zero" onclick="display.value += '0'">0</button>
+      <button class="operator" id="decimal" onclick="display.value += '.'">.</button>
+      <button class="operator" id="equals" onclick="display.value = eval(display.value)">=</button>
+      <button class="operator" id="add" onclick="display.value += '+'">+</button>
+    </div>
+    <button id="clear" onclick="display.value = ''">Clear</button>
+  </div>
+  <script src="calculator.js"></script>
+</body>
+</html>

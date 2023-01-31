@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #afcbff;
+  }
+  
+  #calculator {
+    margin: 0 auto;
+    text-align: center;
+    width: 400px;
+  }
+  
+  #display {
+    width: 100%;
+    height: 80px;
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  .number, .operator {
+    width: 75px;
+    height: 75px; 
+    font-size: 2em; 
+  }  
